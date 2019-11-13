@@ -2,7 +2,7 @@ require 'pry'
 
 
 class School
-  # attr_accessor :roster
+  attr_accessor :roster, :student_name
   def initialize(name)
     @name = name
     @roster = {}
