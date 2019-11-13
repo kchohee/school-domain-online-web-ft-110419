@@ -22,5 +22,4 @@ binding.pry
   end
 end
 
-add_student("Cho", 28
-)
+add_student("Cho", 28)
