@@ -7,12 +7,9 @@ class School
     @name = name
     @roster = {}
   end
-  def add_student(student, grade)
-    if roster[grade] == nil
-      roster[grade] = []
-binding.pry
+  def add_student(student_name, grade)
+    if roster[grade] == nil ? roster[grade] = [] : roster[grade] << student
     end
-    roster[grade] << student
   end
   def grade(grade)
     roster[grade]
@@ -21,5 +18,3 @@ binding.pry
     roster.each { |k, v| roster[k] = v.sort }
   end
 end
-try = School.new("highschool")
-try.add_student("Cho", 28)
