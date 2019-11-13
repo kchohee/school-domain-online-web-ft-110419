@@ -21,5 +21,5 @@ binding.pry
     roster.each { |k, v| roster[k] = v.sort }
   end
 end
-
-add_student("Cho", 28)
+try = class.new
+test.add_student("Cho", 28)
