@@ -8,14 +8,14 @@ class School
     @roster = {}
   end
   def add_student(student_name, grade)
-    if roster.include?(grade)
-      roster[grade]<< student_name
+    if @roster.include?(grade)
+      @roster[grade]<< student_name
     end
   end
   def grade(grade)
-    roster[grade]
+    @roster[grade]
   end
   def sort
-    roster.each { |k, v| roster[k] = v.sort }
+    @roster.each { |k, v| roster[k] = v.sort }
   end
 end
