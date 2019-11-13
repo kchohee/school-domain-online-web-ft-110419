@@ -22,4 +22,4 @@ binding.pry
   end
 end
 try = School.new
-test.add_student("Cho", 28)
+try.add_student("Cho", 28)
