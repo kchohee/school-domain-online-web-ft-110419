@@ -21,4 +21,6 @@ binding.pry
     roster.each { |k, v| roster[k] = v.sort }
   end
 end
-add_student("Cho", 28)
+
+add_student("Cho", 28
+)
