@@ -1,28 +1,26 @@
-class School
+require 'pry'
+class School  
+  attr_accessor :roster
+
   def initialize(name)
     @name = name
     @roster = {}
   end
-
-  def roster
-    @roster
-  end
-
-  def add_student(name, grade)
-    if @roster[grade] != nil
-      @roster[grade] << name
-    else
-      @roster[grade] = [name]
+  
+  def add_student(student, grade)
+    if roster[grade] == nil
+      roster[grade] = []
     end
+    roster[grade] << student
   end
-
+  
   def grade(grade)
-    @roster[grade]
+    roster[grade]
   end
-
+  
   def sort
-    @roster.each do |key, value|
-      value.sort!
-    end
+    roster.each { |k, v| roster[k] = v.sort }
+binding.pry
   end
-end 
+end
+
